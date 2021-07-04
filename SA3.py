@@ -7,7 +7,7 @@ modedas = [200, 100, 50, 20, 10, 5, 2, 1, 0.5, 0.25, 0.10, 0.05, 0.01]
 totalCompras = float(input('Digite o valor total da compra: '))
 valorRecebido = float(input('Digite o valor recebido do cliente: '))
 troco = valorRecebido - totalCompras
-print('O troco é: R$ ', round(troco, 2), 'Reais')
+print('O troco é: R$ ', round(troco, 2))
 for i in modedas:
     trocoFinal = int(troco / i)
     if trocoFinal != 0:
@@ -15,9 +15,7 @@ for i in modedas:
         if (trocoFinal >= 1):
             trocoCliente = i
             if(trocoCliente >= 2):
-                print('Seu troco é ', trocoCliente * trocoFinal)
-                print(f'Notas de R${i}: ',trocoFinal)
+                print(trocoFinal, 'Nota(s) de R$ %.2f' %i)
             else:
-                print('Seu troco é ', trocoCliente * trocoFinal)
-                print(f'Moedas de R${i}: ',trocoFinal)
+                print(trocoFinal, 'Moeda(s) de R$ %.2f' %i)
         troco = troco - (trocoFinal * i)
