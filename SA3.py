@@ -2,7 +2,7 @@ totalCompras = 0
 valorRecebido = 0
 troco = 0
 trocoFinal = 0
-modedas = [200, 100, 50, 20, 10, 5, 2, 1, 0.5, 0.25, 0.10, 0.05, 0.01]
+modedas = [200, 100, 50, 20, 10, 5, 2, 1, 0.5, 0.25, 0.10, 0.05]
 
 totalCompras = float(input('Digite o valor total da compra: '))
 valorRecebido = float(input('Digite o valor recebido do cliente: '))
